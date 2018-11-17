@@ -3,15 +3,18 @@ import React from 'react';
 var VideoListEntry = ({video, handleVideoListEntryTitleClick}) => (
   <div className="video-list-entry">
     <div className="media-left media-middle">
+    {/* use store to access state */}
       <img className="media-object" src={video.snippet.thumbnails.default.url} alt="" />
     </div>
     <div className="media-body">
       <div
         className="video-list-entry-title"
+        {/* subscribe to handle event */}
         onClick={() => handleVideoListEntryTitleClick(video)}
       >
         {video.snippet.title}
       </div>
+      {/* use store to access state */}
       <div className="video-list-entry-detail">{video.snippet.description}</div>
     </div>
   </div>
