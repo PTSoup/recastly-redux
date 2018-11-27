@@ -4,7 +4,7 @@ import VideoListEntry from './VideoListEntry.js';
 var VideoList = ({videos, handleVideoListEntryTitleClick}) => (
   <div className="video-list">
     {
-      /* use store to access state */
+      /* use store to access state */ 
       videos.map(video => (
         <VideoListEntry
           key={video.etag}
