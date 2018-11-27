@@ -60,7 +60,7 @@ export default class App extends React.Component {
             <VideoList
             // subscribe to handle event
               handleVideoListEntryTitleClick={this.handleVideoListEntryTitleClick.bind(this)}
-              {/* use store to access state */}
+              /* use store to access state */
               videos={this.state.videos}
             />
           </div>
