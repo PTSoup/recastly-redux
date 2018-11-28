@@ -1,6 +1,6 @@
-var changeVideo = (video) => ({
+var changeVideo = (currentVideo) => ({
   type: 'CHANGE_VIDEO',
-  video
+  currentVideo
 });
 
 export default changeVideo;
